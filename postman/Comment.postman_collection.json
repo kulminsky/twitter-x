@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "669f3aab-8944-462e-b18f-1e7853520057",
+		"name": "Comment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25916943"
+	},
+	"item": [
+		{
+			"name": "Get comment by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/api/posts/662f95a270a819599baa33f2/comments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"posts",
+						"662f95a270a819599baa33f2",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create comment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content\": \"My comment!!!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/posts/662f95a270a819599baa33f2/comments?userId=662f86894bca44351d15bae5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"posts",
+						"662f95a270a819599baa33f2",
+						"comments"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "662f86894bca44351d15bae5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update comment",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content\": \"My comment!!! (Updated)\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/posts/662f95a270a819599baa33f2/comments/662f97b4922b771359ca19ac",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"posts",
+						"662f95a270a819599baa33f2",
+						"comments",
+						"662f97b4922b771359ca19ac"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "662f86894bca44351d15bae5",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete comment",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/api/posts/662f95a270a819599baa33f2/comments/662f97b4922b771359ca19ac",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"posts",
+						"662f95a270a819599baa33f2",
+						"comments",
+						"662f97b4922b771359ca19ac"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "662f86894bca44351d15bae5",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
