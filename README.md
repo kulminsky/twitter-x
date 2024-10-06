@@ -114,8 +114,7 @@ POST http://localhost:8080/api/posts
 ```
 ```json
 {
-  "content": "This is my first post!",
-  "userId": "60d21b4667d0d8992e610c85"
+  "content": "This is my first post!"
 }
 ```
 
@@ -135,8 +134,7 @@ POST http://localhost:8080/api/posts/{postId}/comments
 ```
 ```json
 {
-  "content": "Great post!",
-  "userId": "60d21b4667d0d8992e610c85"
+  "content": "Great post!"
 }
 ```
 
