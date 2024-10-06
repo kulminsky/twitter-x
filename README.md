@@ -33,8 +33,8 @@ To run this project locally, you will need the following:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/kulminsky/twitter.git
-cd twitter-clone-api
+git clone https://github.com/kulminsky/twitter-x.git
+cd twitter-x
 ```
 
 ### 2. Docker Compose Setup
